@@ -67,11 +67,14 @@ fi
 # reddit ppa aren't built for anything but trusty (14.04) right now, so
 # if you try and use this install script on another release you're gonna
 # have a bad time.
-source /etc/lsb-release
-if [ "$DISTRIB_ID" != "Ubuntu" -o "$DISTRIB_RELEASE" != "14.04" ]; then
-    echo "ERROR: Only Ubuntu 14.04 is supported."
-    exit 1
-fi
+
+#Thanks for the warning, I'll try anyways.
+
+#source /etc/lsb-release
+#if [ "$DISTRIB_ID" != "Ubuntu" -o "$DISTRIB_RELEASE" != "14.04" ]; then
+#    echo "ERROR: Only Ubuntu 14.04 is supported."
+#    exit 1
+#fi
 
 ###############################################################################
 # Install prerequisites
